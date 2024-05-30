@@ -14,6 +14,7 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  base: "/medication-tracker/",
   build: {
     target: "esnext",
     outDir: "docs",
