@@ -23,8 +23,8 @@ function App() {
   function recordMedication() {
     setMedicationHistory((previousMedicationHistory) => {
       const newMedicationHistory = [
-        ...previousMedicationHistory,
         new Date().toLocaleString(),
+        ...previousMedicationHistory,
       ];
       storeMedicationHistory(newMedicationHistory);
       return newMedicationHistory;
