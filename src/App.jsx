@@ -31,8 +31,10 @@ function App() {
   }
 
   return (
-    <div class={styles.App}>
-      <button onClick={() => recordMedication()}>Take medicine</button>
+    <div class={styles.app}>
+      <button class={styles.button} onClick={() => recordMedication()}>
+        Take medicine
+      </button>
 
       <p>Last taken:</p>
       <For each={medicationHistory()}>
@@ -40,6 +42,7 @@ function App() {
       </For>
 
       <button
+        class={styles.button}
         onClick={() => {
           storeMedicationHistory([]);
           setMedicationHistory([]);
